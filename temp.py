@@ -1,28 +1,16 @@
-# 整形
-age = 23
-print(age.__class__)
-# 字符串
-name = '两点水'
-print(name.__class__)
+from greenlet import greenlet
 
+def test1():
+    print(12)
+    gr2.switch()
+    print(34)
+    gr2.switch()
 
-# 函数
-def fu():
-    pass
+def test2():
+    print(56)
+    gr1.switch()
+    print(78)
 
-
-print(fu.__class__)
-
-
-# 实例
-class eat(object):
-    pass
-
-
-mEat = eat()
-print(eat.__class__)
-print(mEat.__class__)
-print(age.__class__.__class__)
-print(name.__class__.__class__)
-print(fu.__class__.__class__)
-print(mEat.__metaclass__)
+gr1 = greenlet(test1)
+gr2 = greenlet(test2)
+gr1.switch()
