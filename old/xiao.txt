@@ -1,0 +1,7 @@
+root@cyan-virtual-machine:/home/cyan# /hadoop/hadoop-3.3.4/sbin/start-all.sh
+Starting namenodes on [localhost]
+Starting datanodes
+localhost: ERROR: Cannot set priority of datanode process 14456
+Starting secondary namenodes [cyan-virtual-machine]
+Starting resourcemanager
+Starting nodemanagers
