@@ -1,5 +1,8 @@
 {
     "python.analysis.typeCheckingMode": "off",
     "git.ignoreLimitWarning": true,
-    "python.analysis.autoImportCompletions": true
+    "python.analysis.autoImportCompletions": true,
+    "compile-hero.disable-compile-files-on-did-save-code": true,
+    "python.defaultInterpreterPath": "",
+    "python.analysis.inlayHints.callArgumentNames": "off",
 }
